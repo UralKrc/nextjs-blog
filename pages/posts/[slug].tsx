@@ -26,7 +26,6 @@ export default function Post({ post, morePosts, preview }: Props) {
     return <ErrorPage statusCode={404} />
   }
 
-  console.log(post);
   return (
     <Layout preview={preview}>
       <Container>
@@ -47,7 +46,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                 author={post.author}
               />
               <PostBody content={post.content} />
-             <PostExample examples={post.examples} />
+             <PostExample examples={Object.values(post.examples)} />
             </article>
           </>
         )}

@@ -1,6 +1,6 @@
 ---
 title: 'Dynamic Routing in Next.js'
-excerpt: In this comprehensive guide, we'll explore the ins and outs of dynamic routing, providing you with the knowledge and practical insights to create dynamic, data-driven pages that enhance user experiences.'
+excerpt: "In this comprehensive guide, we'll explore the ins and outs of dynamic routing, providing you with the knowledge and practical insights to create dynamic, data-driven pages that enhance user experiences."
 coverImage: '/assets/blog/dynamic-routing/cover.jpg'
 date: '2023-12-17T05:35:07.322Z'
 author:
@@ -10,16 +10,19 @@ ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 examples:
   example_1: 
+    id: 1
     title: 'Dynamic Page with Parameter'
     subtitle: 'In your pages directory, create a file named [slug].js:'
     url: '/assets/blog/dynamic-routing/examples/dynamic-page.png'
     description: 'Now, when you access a URL like /dynamic-page-example, it will render the DynamicPage component with the corresponding slug parameter.'
   example_2: 
+    id: 2
     title: 'Dynamic Page with Query Parameter'
     subtitle: 'Create a file named dynamic-page.js:'
     url: '/assets/blog/dynamic-routing/examples/slug.png'
     description: 'Now, when you access a URL like /dynamic-page?productId=123, it will render the DynamicPage component with the corresponding productId query parameter.'
   example_3: 
+    id: 3
     title: 'Fetching Data for Dynamic Route'
     subtitle: 'Create a file named [postId].js:'
     url: '/assets/blog/dynamic-routing/examples/post-id.png'
@@ -45,9 +48,4 @@ Efficiently fetch data for your dynamic routes to create dynamic, data-driven pa
 ## Optimizing Dynamic Routes for Performance:
 Dynamic routing doesn't mean sacrificing performance. Explore optimization techniques to ensure your dynamic pages load quickly and efficiently. From code splitting to leveraging caching mechanisms, we'll cover strategies to deliver a seamless user experience while working with dynamic content.
 
-## Real-world Examples and Best Practices:
-Learn from real-world examples of applications that effectively utilize dynamic routing in Next.js. We'll explore use cases such as e-commerce product pages, blog posts, and content-rich websites. Gain insights into best practices for structuring your code, managing state, and creating dynamic, engaging user interfaces.
-
-By the end of this guide, you'll be equipped with the knowledge and skills to harness the full potential of dynamic routing in Next.js, allowing you to create dynamic, data-driven web applications that captivate and engage your audience.
-
-## Examples
+## Examples:

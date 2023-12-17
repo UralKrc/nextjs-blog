@@ -2,7 +2,7 @@
 title: 'Learn How to Pre-render Pages Using Static Generation with Next.js'
 excerpt: 'Unlock the full potential of Next.js by mastering the art of static generation-a technique that empowers you to pre-render pages and deliver lightning-fast experiences to your users.'
 coverImage: '/assets/blog/static-generation/cover.jpg'
-date: '2023-12-17T05:35:07.322Z'
+date: '2023-12-13T05:35:07.322Z'
 author:
   name: Ural Karaca
   picture: '/assets/blog/authors/ural.jpeg'
@@ -10,20 +10,24 @@ ogImage:
   url: '/assets/blog/static-generation/cover.jpg'
 examples:
   example_1: 
-  title: 'Dynamic Page with Parameter'
-  subtitle: 'In your pages directory, create a file named [slug].js:'
-  url: '/assets/blog/dynamic-routing/examples/dynamic-page.png'
-  description: 'Now, when you access a URL like /dynamic-page-example, it will render the DynamicPage component with the corresponding slug parameter.'
-example_2: 
-  title: 'Dynamic Page with Query Parameter'
-  subtitle: 'Create a file named dynamic-page.js:'
-  url: '/assets/blog/dynamic-routing/examples/slug.png'
-  description: 'Now, when you access a URL like /dynamic-page?productId=123, it will render the DynamicPage component with the corresponding productId query parameter.'
-example_3: 
-  title: 'Fetching Data for Dynamic Route'
-  subtitle: 'Create a file named [postId].js:'
-  url: '/assets/blog/dynamic-routing/examples/post-id.png'
-  description: 'In this example, the getServerSideProps function fetches data for the dynamic route (postId). The data is then passed as props to the Post component.'
+    id: 1
+    title: 'Install Next.js:'
+    subtitle: "If you haven't already, you can create a new Next.js project using the following commands:"
+    url: '/assets/blog/static-generation/examples/example_1.png'
+    description: ''
+  example_2: 
+    id: 2
+    title: 'Create a new page:'
+    subtitle: "Create a new file in the pages directory. Let's call it static-page.js. This page will be statically generated."
+    url: '/assets/blog/static-generation/examples/example_2.png'
+    description: ''
+  example_3: 
+    id: 3
+    title: 'Start the application:'
+    subtitle: 'After building, you can start the application:'
+    url: '/assets/blog/static-generation/examples/example_3.png'
+    description: 'Visit `/static-page` in your browser to see the statically generated page. In the example above; The getStaticProps function is used to fetch data at build time. The data is then passed as props to the StaticPage component. The StaticPage component receives the data as a prop and renders it on the page. Static generation is suitable for pages where the content does not change frequently. If you need to fetch data at request time (e.g., for dynamic content), you can use the getServerSideProps function. Make sure to refer to the Next.js documentation for more details and advanced use cases.'
+ 
 ---
 
 ## Mastering Static Generation in Next.js: A Comprehensive Guide
@@ -44,7 +48,5 @@ Efficient data fetching is crucial for successful static generation. Learn how t
 
 ## Deploying and Scaling Static Generation:
 Once your static generation setup is complete, it's time to deploy and scale your Next.js application. Explore deployment options, including popular hosting platforms, and implement strategies to ensure your static pages are served globally with minimal latency. Dive into best practices for optimizing CDN caching and handling large-scale applications.
-
-By the end of this guide, you'll be equipped with the knowledge and skills to harness the full potential of static generation in Next.js, creating websites that are not only visually appealing but also deliver a seamless, high-performance user experience.
 
 ## Examples

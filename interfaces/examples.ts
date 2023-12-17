@@ -1,21 +1,24 @@
 type Examples = {
   example_1: {
-    url: string
-    title: string
-    subtitle: string
-    description: string
+    id: number
+    url?: string
+    title?: string
+    subtitle?: string
+    description?: string
   },
   example_2: {
-    url: string
-    title: string
-    subtitle: string
-    description: string
+    id: number
+    url?: string
+    title?: string
+    subtitle?: string
+    description?: string
   },
   example_3: {
-    url: string
-    title: string
-    subtitle: string
-    description: string
+    id: number
+    url?: string
+    title?: string
+    subtitle?: string
+    description?: string
   }
 }
 
