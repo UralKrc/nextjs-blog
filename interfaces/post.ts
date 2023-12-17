@@ -1,4 +1,5 @@
 import type Author from './author'
+import type Examples from './examples'
 
 type PostType = {
   slug: string
@@ -10,6 +11,7 @@ type PostType = {
   ogImage: {
     url: string
   }
+  examples: Examples
   content: string
 }
 

@@ -8,6 +8,22 @@ author:
   picture: '/assets/blog/authors/ural.jpeg'
 ogImage:
   url: '/assets/blog/updates/cover.jpg'
+examples:
+  example_1: 
+  title: 'Dynamic Page with Parameter'
+  subtitle: 'In your pages directory, create a file named [slug].js:'
+  url: '/assets/blog/dynamic-routing/examples/dynamic-page.png'
+  description: 'Now, when you access a URL like /dynamic-page-example, it will render the DynamicPage component with the corresponding slug parameter.'
+example_2: 
+  title: 'Dynamic Page with Query Parameter'
+  subtitle: 'Create a file named dynamic-page.js:'
+  url: '/assets/blog/dynamic-routing/examples/slug.png'
+  description: 'Now, when you access a URL like /dynamic-page?productId=123, it will render the DynamicPage component with the corresponding productId query parameter.'
+example_3: 
+  title: 'Fetching Data for Dynamic Route'
+  subtitle: 'Create a file named [postId].js:'
+  url: '/assets/blog/dynamic-routing/examples/post-id.png'
+  description: 'In this example, the getServerSideProps function fetches data for the dynamic route (postId). The data is then passed as props to the Post component.'
 ---
 
 ## Navigating the Future: Exploring the Latest Updates and Features in Next.js
@@ -30,3 +46,5 @@ Ready to take advantage of the latest and greatest Next.js features? We'll guide
 Peer into the future of Next.js by exploring the roadmap and upcoming features. Gain insights into the direction of the framework, upcoming enhancements, and new capabilities on the horizon. Stay ahead of the curve and be prepared for what's coming next in the ever-evolving world of Next.js.
 
 By the end of this exploration, you'll be well-equipped to embrace the latest features and updates in Next.js, ensuring your projects are not only cutting-edge but also benefit from the continuous innovation within the Next.js ecosystem.
+
+## Examples

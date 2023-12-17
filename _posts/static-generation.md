@@ -8,6 +8,22 @@ author:
   picture: '/assets/blog/authors/ural.jpeg'
 ogImage:
   url: '/assets/blog/static-generation/cover.jpg'
+examples:
+  example_1: 
+  title: 'Dynamic Page with Parameter'
+  subtitle: 'In your pages directory, create a file named [slug].js:'
+  url: '/assets/blog/dynamic-routing/examples/dynamic-page.png'
+  description: 'Now, when you access a URL like /dynamic-page-example, it will render the DynamicPage component with the corresponding slug parameter.'
+example_2: 
+  title: 'Dynamic Page with Query Parameter'
+  subtitle: 'Create a file named dynamic-page.js:'
+  url: '/assets/blog/dynamic-routing/examples/slug.png'
+  description: 'Now, when you access a URL like /dynamic-page?productId=123, it will render the DynamicPage component with the corresponding productId query parameter.'
+example_3: 
+  title: 'Fetching Data for Dynamic Route'
+  subtitle: 'Create a file named [postId].js:'
+  url: '/assets/blog/dynamic-routing/examples/post-id.png'
+  description: 'In this example, the getServerSideProps function fetches data for the dynamic route (postId). The data is then passed as props to the Post component.'
 ---
 
 ## Mastering Static Generation in Next.js: A Comprehensive Guide
@@ -30,3 +46,5 @@ Efficient data fetching is crucial for successful static generation. Learn how t
 Once your static generation setup is complete, it's time to deploy and scale your Next.js application. Explore deployment options, including popular hosting platforms, and implement strategies to ensure your static pages are served globally with minimal latency. Dive into best practices for optimizing CDN caching and handling large-scale applications.
 
 By the end of this guide, you'll be equipped with the knowledge and skills to harness the full potential of static generation in Next.js, creating websites that are not only visually appealing but also deliver a seamless, high-performance user experience.
+
+## Examples

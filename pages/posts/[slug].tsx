@@ -11,6 +11,7 @@ import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
+import PostExample from '../../components/post-example'
 
 type Props = {
   post: PostType
@@ -24,6 +25,8 @@ export default function Post({ post, morePosts, preview }: Props) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
+
+  console.log(post);
   return (
     <Layout preview={preview}>
       <Container>
@@ -44,6 +47,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                 author={post.author}
               />
               <PostBody content={post.content} />
+             <PostExample examples={post.examples} />
             </article>
           </>
         )}
@@ -67,6 +71,7 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'ogImage',
     'coverImage',
+    'examples'
   ])
   const content = await markdownToHtml(post.content || '')
 

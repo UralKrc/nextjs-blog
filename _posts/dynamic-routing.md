@@ -8,6 +8,22 @@ author:
   picture: '/assets/blog/authors/ural.jpeg'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
+examples:
+  example_1: 
+    title: 'Dynamic Page with Parameter'
+    subtitle: 'In your pages directory, create a file named [slug].js:'
+    url: '/assets/blog/dynamic-routing/examples/dynamic-page.png'
+    description: 'Now, when you access a URL like /dynamic-page-example, it will render the DynamicPage component with the corresponding slug parameter.'
+  example_2: 
+    title: 'Dynamic Page with Query Parameter'
+    subtitle: 'Create a file named dynamic-page.js:'
+    url: '/assets/blog/dynamic-routing/examples/slug.png'
+    description: 'Now, when you access a URL like /dynamic-page?productId=123, it will render the DynamicPage component with the corresponding productId query parameter.'
+  example_3: 
+    title: 'Fetching Data for Dynamic Route'
+    subtitle: 'Create a file named [postId].js:'
+    url: '/assets/blog/dynamic-routing/examples/post-id.png'
+    description: 'In this example, the getServerSideProps function fetches data for the dynamic route (postId). The data is then passed as props to the Post component. These examples cover basic scenarios, and you can build upon them based on the specific requirements of your project. Remember to adapt the code to suit your application structure and needs.'
 ---
 
 ## Mastering Dynamic Routing in Next.js: A Comprehensive Guide
@@ -34,3 +50,4 @@ Learn from real-world examples of applications that effectively utilize dynamic 
 
 By the end of this guide, you'll be equipped with the knowledge and skills to harness the full potential of dynamic routing in Next.js, allowing you to create dynamic, data-driven web applications that captivate and engage your audience.
 
+## Examples
